@@ -19,7 +19,7 @@ else{
     if(bmi<18.6){
         results.innerHTML = `<span>${bmi}<br>Vajan kam hai😔</span>`
     }
-     if(bmi>18.6 && bmi<24.9){
+     else if(bmi>18.6 && bmi<24.9){
         results.innerHTML = `<span>${bmi}<br>Vajan normal hai🤗</span>`
     }
     else{

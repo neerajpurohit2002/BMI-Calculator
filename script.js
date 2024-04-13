@@ -17,13 +17,13 @@ else if(weight === '' || weight<0 || isNaN(weight)){
 else{
     const bmi = (weight/((height*height)/10000)).toFixed(2);
     if(bmi<18.6){
-        results.innerHTML = `<span>${bmi}<br>Vajan kam hai😔</span>`
+        results.innerHTML = `<span>${bmi}<br>Underweight</span>`
     }
-     else if(bmi>18.6 && bmi<24.9){
-        results.innerHTML = `<span>${bmi}<br>Vajan normal hai🤗</span>`
+    else if(bmi>18.6 && bmi<24.9){
+        results.innerHTML = `<span>${bmi}<br>Normal</span>`
     }
     else{
-        results.innerHTML = `<span>${bmi}<br>Vajan jayda hai😥</span>`
+        results.innerHTML = `<span>${bmi}<br>Overweight</span>`
     }
     
 }
